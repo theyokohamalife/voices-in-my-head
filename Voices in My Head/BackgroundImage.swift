@@ -12,6 +12,7 @@ struct BackgroundImage: View {
         Image("ducky")
             .resizable()
             .aspectRatio(contentMode: .fit)
+            
     }
 }
 

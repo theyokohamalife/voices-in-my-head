@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         VStack {
             Text("Voices in My Head")
                 .padding()
                 .font(.title)
                 .foregroundColor(.black)
+            
+            BackgroundImage() //component
+            
             Text("Let the quest begin")
                 .font(.subheadline)
                 .padding()
-            
-            
         }
     }
 }
