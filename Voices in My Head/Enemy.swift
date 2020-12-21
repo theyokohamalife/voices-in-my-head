@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct BattleGround: View {
-    @State private var progress = 120
-    @State private var currentProgress = 0
+    @State private var progress = 300
+    @State private var currentProgress = 10
     
     var body: some View {
         VStack {
@@ -26,7 +26,7 @@ struct BattleGround: View {
                 ]), startPoint: .top, endPoint: .bottom)
                 .frame(width: CGFloat(progress), height: 24)
                 .cornerRadius(8)
-                Text("HP")
+                Text("HP \(currentProgress)")
                     .foregroundColor(.black)
                     .offset(x: 20, y:0)
             }
