@@ -11,6 +11,7 @@
 		F73746492590C7A7006D1ECF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73746482590C7A7006D1ECF /* ContentView.swift */; };
 		F737464B2590C7AA006D1ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F737464A2590C7AA006D1ECF /* Assets.xcassets */; };
 		F737464E2590C7AA006D1ECF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F737464D2590C7AA006D1ECF /* Preview Assets.xcassets */; };
+		F73746572590D1C9006D1ECF /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73746562590D1C9006D1ECF /* BackgroundImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		F737464A2590C7AA006D1ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F737464D2590C7AA006D1ECF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F737464F2590C7AA006D1ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F73746562590D1C9006D1ECF /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				F73746462590C7A7006D1ECF /* Voices_in_My_HeadApp.swift */,
 				F73746482590C7A7006D1ECF /* ContentView.swift */,
+				F73746562590D1C9006D1ECF /* BackgroundImage.swift */,
 				F737464A2590C7AA006D1ECF /* Assets.xcassets */,
 				F737464F2590C7AA006D1ECF /* Info.plist */,
 				F737464C2590C7AA006D1ECF /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73746572590D1C9006D1ECF /* BackgroundImage.swift in Sources */,
 				F73746492590C7A7006D1ECF /* ContentView.swift in Sources */,
 				F73746472590C7A7006D1ECF /* Voices_in_My_HeadApp.swift in Sources */,
 			);
