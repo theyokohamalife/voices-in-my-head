@@ -73,6 +73,7 @@ struct ContentView: View {
                             enemyHP -= attack
                         }
                         if enemyHP <= 0 {
+                            enemyHP = 0
                             print("You won!")
                         }
                         print("attack", String(attack))
@@ -103,6 +104,9 @@ struct ContentView: View {
                             print("Game Over")
                         } else if playerHP > 0 {
                             playerHP += heal
+                            if playerHP > 130 {
+                                playerHP = 130
+                            }
                         }
                         print("heal", String(heal))
                     }, label: {
