@@ -30,15 +30,20 @@ struct ContentView: View {
                     .foregroundColor(.gray)
                     .frame(width: .infinity, height: 200)
                 Text("Game dialogue")
+                    .fontWeight(.bold)
                     .foregroundColor(.black)
             }
             // Abilities
             HStack {
                 ZStack {
+                    
                     Circle()
                         .foregroundColor(.gray)
                         .frame(width: 80, height:80)
-                    Text("Attack")
+//                    Text("Attack")
+                    Button("click", action: {
+                        print("clicked")
+                    })
                 }
                 ZStack {
                     Circle()
