@@ -41,21 +41,28 @@ struct ContentView: View {
                         .foregroundColor(.gray)
                         .frame(width: 80, height:80)
 //                    Text("Attack")
-                    Button("click", action: {
-                        print("clicked")
+                    Button("Attack", action: {
+                        print("Attack")
                     })
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
                 }
                 ZStack {
                     Circle()
                         .foregroundColor(.gray)
                         .frame(width: 80, height:80)
-                    Text("Defend")
+                    Button("Block", action: {
+                        print("Block")
+                    })
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
                 }
                 ZStack {
                     Circle()
                         .foregroundColor(.gray)
                         .frame(width: 80, height:80)
-                    Text("Heal")
+                    Button("Heal", action: {
+                        print("Heal")
+                    })
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
                 }
             }
             
