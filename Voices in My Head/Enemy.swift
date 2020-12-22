@@ -32,9 +32,9 @@ struct BattleGround: View {
             }
             Spacer()
             
-            Image("ducky")
-                .resizable()
-                .aspectRatio(CGSize(width: 0.3, height: 0.3), contentMode: .fit)
+//            Image("ducky")
+//                .resizable()
+//                .aspectRatio(CGSize(width: 0.3, height: 0.3), contentMode: .fit)
         }
     }
 }

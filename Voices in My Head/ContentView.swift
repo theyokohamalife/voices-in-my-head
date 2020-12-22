@@ -16,7 +16,7 @@ struct ContentView: View {
                 .font(.title)
                 .foregroundColor(.black)
             
-            BackgroundImage() //component
+//            BackgroundImage() //component
             
             Text("Let the quest begin")
                 .font(.subheadline)
