@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+
 struct Voices_in_My_HeadApp: App {
     var body: some Scene {
         WindowGroup {
