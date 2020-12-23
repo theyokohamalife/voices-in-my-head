@@ -11,9 +11,16 @@ import Speech
 
 struct ContentView: View {
     @EnvironmentObject var swiftUISpeech:SwiftUISpeech
+    @State var enemyHP:Int = 999
     
     var body: some View {
         VStack {
+            ZStack {
+                Rectangle()
+                    .frame(width: 200, height: 30)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                Text("HP: \(enemyHP)")
+            }
             VStack{
                 Text("\(swiftUISpeech.outputText)")// prints results to screen
                     .font(.title)
@@ -21,8 +28,8 @@ struct ContentView: View {
                 
             }.frame(width: 300,height: 400)
             
-            VStack {// Speech button
-                
+            VStack {
+                // Speech button
                 swiftUISpeech.getButton()
                 Spacer()
             }

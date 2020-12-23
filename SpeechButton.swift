@@ -11,14 +11,16 @@ import Foundation
 
 struct SpeechButton: View {
     
+    
     @State var isPressed:Bool = false
     @State var actionPop:Bool = false
     @EnvironmentObject var swiftUISpeech:SwiftUISpeech
     
     var body: some View {
         
-        Button(action:{// Button
-            if(self.swiftUISpeech.getSpeechStatus() == "Denied - Close the App"){// checks status of auth if no auth pop up error
+        // Check authorization status
+        Button(action:{
+            if(self.swiftUISpeech.getSpeechStatus() == "Denied - Close the App"){
                 self.actionPop.toggle()
             }else{
                 withAnimation(.spring(response: 0.4, dampingFraction: 0.3, blendDuration: 0.3)){self.swiftUISpeech.isRecording.toggle()}// button animation
