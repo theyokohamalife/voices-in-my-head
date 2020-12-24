@@ -10,6 +10,8 @@
 		F73746472590C7A7006D1ECF /* Voices_in_My_HeadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73746462590C7A7006D1ECF /* Voices_in_My_HeadApp.swift */; };
 		F737464B2590C7AA006D1ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F737464A2590C7AA006D1ECF /* Assets.xcassets */; };
 		F737464E2590C7AA006D1ECF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F737464D2590C7AA006D1ECF /* Preview Assets.xcassets */; };
+		F749E1E0259439E000A28D97 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F749E1DF259439E000A28D97 /* PlaySound.swift */; };
+		F74BB8A0259442A40059EEC2 /* 09battle2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F74BB89F259442A30059EEC2 /* 09battle2.wav */; };
 		F7EA5B5D259383C000E6ECBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5B5C259383C000E6ECBD /* ContentView.swift */; };
 		F7EA5B62259384C100E6ECBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5B61259384C100E6ECBD /* AppDelegate.swift */; };
 		F7EA5B66259384E200E6ECBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5B65259384E200E6ECBD /* SceneDelegate.swift */; };
@@ -23,6 +25,8 @@
 		F737464A2590C7AA006D1ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F737464D2590C7AA006D1ECF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F737464F2590C7AA006D1ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F749E1DF259439E000A28D97 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		F74BB89F259442A30059EEC2 /* 09battle2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 09battle2.wav; sourceTree = "<group>"; };
 		F7EA5B5C259383C000E6ECBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7EA5B61259384C100E6ECBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		F7EA5B65259384E200E6ECBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +68,10 @@
 				F7EA5B61259384C100E6ECBD /* AppDelegate.swift */,
 				F7EA5B65259384E200E6ECBD /* SceneDelegate.swift */,
 				F7EA5B5C259383C000E6ECBD /* ContentView.swift */,
+				F7FB53D02594422F00B67275 /* Sounds */,
 				F7EA5B682593850D00E6ECBD /* SwiftUISpeech.swift */,
 				F7EA5B6B2593852700E6ECBD /* SpeechButton.swift */,
+				F749E1DF259439E000A28D97 /* PlaySound.swift */,
 				F737464A2590C7AA006D1ECF /* Assets.xcassets */,
 				F737464F2590C7AA006D1ECF /* Info.plist */,
 				F737464C2590C7AA006D1ECF /* Preview Content */,
@@ -79,6 +85,14 @@
 				F737464D2590C7AA006D1ECF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7FB53D02594422F00B67275 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F74BB89F259442A30059EEC2 /* 09battle2.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,7 @@
 			files = (
 				F737464E2590C7AA006D1ECF /* Preview Assets.xcassets in Resources */,
 				F737464B2590C7AA006D1ECF /* Assets.xcassets in Resources */,
+				F74BB8A0259442A40059EEC2 /* 09battle2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7EA5B62259384C100E6ECBD /* AppDelegate.swift in Sources */,
+				F749E1E0259439E000A28D97 /* PlaySound.swift in Sources */,
 				F7EA5B692593850D00E6ECBD /* SwiftUISpeech.swift in Sources */,
 				F73746472590C7A7006D1ECF /* Voices_in_My_HeadApp.swift in Sources */,
 				F7EA5B5D259383C000E6ECBD /* ContentView.swift in Sources */,
