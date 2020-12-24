@@ -133,6 +133,7 @@ public class SwiftUISpeech: ObservableObject{
         
     }// end of get speech status
     
+    
     /* Variables **/
     @Published var isRecording:Bool = false
     @Published var button = SpeechButton()
