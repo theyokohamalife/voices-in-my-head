@@ -8,6 +8,7 @@
 import SwiftUI
 import Speech
 import SpriteKit
+import UIKit
 
 
 struct ContentView: View {
@@ -21,8 +22,19 @@ struct ContentView: View {
     @State var playerDied = false
     @State var enemyDied = false
     @State var gameOver = false
+    @State private var isRotated = false
     
-//    let attackCommands = ["attack", "punch", "hit"]
+    var animation: Animation {
+        Animation.easeOut
+    }
+//    private let skView = SKView()
+
+    
+    // PARTICLE EMITTER START
+    
+    
+    
+    // PARTICLE EMITTER END
         
        
         
@@ -34,6 +46,7 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+            
             Text(enemyName)
                 .font(.title)
                 .onReceive(timer, perform: { _ in
@@ -47,13 +60,14 @@ struct ContentView: View {
                     .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 Text("HP: \(enemyHP)")
                     .fontWeight(.bold)
-                    .padding()
+//                    .padding(.bottom, 100.0)
                 
             }
+            Spacer()
             Image("soul-eater")
-//            onAppear(perform: {
-//                playSound(sound: "battle", type: "wav")
-//            })
+                
+                .rotationEffect(Angle.degrees(isRotated ? 360 : 0))
+                            .animation(animation)
             VStack{
                 
                 // prints results to screen
@@ -103,6 +117,7 @@ struct ContentView: View {
     }
     // Player Actions
     func playerAttack() {
+        self.isRotated.toggle()
         playSound(sound: "punch", type: "wav")
         enemyHP -= Int.random(in: 200...350)
         if enemyHP <= 0 {
@@ -110,6 +125,7 @@ struct ContentView: View {
             engaged = false
             enemyDied = true
             gameOver = true
+            playSound(sound: "playerwon", type: "wav")
             print("YOU WON")
         }
     }
@@ -132,6 +148,7 @@ struct ContentView: View {
             engaged = false
             playerDied = true
             gameOver = true
+            playSound(sound: "gameover", type: "wav")
             print("GAME OVER")
         }
     }
@@ -140,5 +157,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environmentObject(SwiftUISpeech())
+        
     }
 }

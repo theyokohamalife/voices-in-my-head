@@ -19,6 +19,7 @@
 		F769C3BD2594617D00BD4440 /* heal.wav in Resources */ = {isa = PBXBuildFile; fileRef = F769C3BB2594617D00BD4440 /* heal.wav */; };
 		F769C3BE2594617D00BD4440 /* punch.wav in Resources */ = {isa = PBXBuildFile; fileRef = F769C3BC2594617D00BD4440 /* punch.wav */; };
 		F7C47C5025959630008285A1 /* wind.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7C47C4F25959630008285A1 /* wind.wav */; };
+		F7C47C5D25959FAC008285A1 /* EmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C47C5C25959FAC008285A1 /* EmitterView.swift */; };
 		F7EA5B5D259383C000E6ECBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5B5C259383C000E6ECBD /* ContentView.swift */; };
 		F7EA5B62259384C100E6ECBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5B61259384C100E6ECBD /* AppDelegate.swift */; };
 		F7EA5B66259384E200E6ECBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA5B65259384E200E6ECBD /* SceneDelegate.swift */; };
@@ -41,6 +42,7 @@
 		F769C3BB2594617D00BD4440 /* heal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heal.wav; sourceTree = "<group>"; };
 		F769C3BC2594617D00BD4440 /* punch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = punch.wav; sourceTree = "<group>"; };
 		F7C47C4F25959630008285A1 /* wind.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wind.wav; sourceTree = "<group>"; };
+		F7C47C5C25959FAC008285A1 /* EmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterView.swift; sourceTree = "<group>"; };
 		F7EA5B5C259383C000E6ECBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7EA5B61259384C100E6ECBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		F7EA5B65259384E200E6ECBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				F769C3B02594556100BD4440 /* PlayerWonView.swift */,
 				F769C3B4259455DB00BD4440 /* PlayerLostView.swift */,
 				F7EA5B61259384C100E6ECBD /* AppDelegate.swift */,
+				F7C47C5C25959FAC008285A1 /* EmitterView.swift */,
 				F7EA5B65259384E200E6ECBD /* SceneDelegate.swift */,
 				F7EA5B5C259383C000E6ECBD /* ContentView.swift */,
 				F7FB53D02594422F00B67275 /* Sounds */,
@@ -198,6 +201,7 @@
 				F769C3B5259455DB00BD4440 /* PlayerLostView.swift in Sources */,
 				F73746472590C7A7006D1ECF /* Voices_in_My_HeadApp.swift in Sources */,
 				F7EA5B5D259383C000E6ECBD /* ContentView.swift in Sources */,
+				F7C47C5D25959FAC008285A1 /* EmitterView.swift in Sources */,
 				F7EA5B66259384E200E6ECBD /* SceneDelegate.swift in Sources */,
 				F7EA5B6C2593852700E6ECBD /* SpeechButton.swift in Sources */,
 			);
