@@ -47,8 +47,8 @@ struct ContentView: View {
                     .frame(width: 200, height: 30)
                     .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 Text("HP: \(enemyHP)")
+                    .font(.title2)
                     .fontWeight(.bold)
-//                    .padding(.bottom, 100.0)
                 
             }
             Spacer()
@@ -60,6 +60,7 @@ struct ContentView: View {
                 
                 // Prints speech results on screen
                 Text("\(swiftUISpeech.outputText)")
+                    .font(.title)
                     .onChange(of: swiftUISpeech.outputText, perform: { value in
                         if gameOver == false {
                             engaged = true
@@ -90,6 +91,7 @@ struct ContentView: View {
                         .frame(width: 200, height: 30)
                         .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                     Text("HP: \(playerHP)")
+                        .font(.title2)
                         .fontWeight(.bold)
                         .padding()
                 }
