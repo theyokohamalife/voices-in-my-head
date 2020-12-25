@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Speech
+import SpriteKit
 
 
 struct ContentView: View {
@@ -17,6 +18,14 @@ struct ContentView: View {
     @State var playerHP:Int = 130
     @State var playerShield:Int = 0
     @State var engaged = false
+    @State var playerDied = false
+    @State var enemyDied = false
+    @State var gameOver = false
+    
+//    let attackCommands = ["attack", "punch", "hit"]
+        
+       
+        
     
     
     let timer = Timer.publish(every: 8, on: .main, in: .common).autoconnect()
@@ -42,28 +51,31 @@ struct ContentView: View {
                 
             }
             Image("soul-eater")
-                .onAppear(perform: {
-                    playSound(sound: "09battle2", type: "wav")
-                })
-            
+//            onAppear(perform: {
+//                playSound(sound: "battle", type: "wav")
+//            })
             VStack{
                 
                 // prints results to screen
                 Text("\(swiftUISpeech.outputText)")
                     .onChange(of: swiftUISpeech.outputText, perform: { value in
-                        engaged = true
-                        print(swiftUISpeech.outputText)
-                        if command.outputText.contains("Attack") || command.outputText.contains("attack") || command.outputText.contains("kill") || command.outputText.contains("Kill") || command.outputText.contains("hit") || command.outputText.contains("Hit") {
-                            print("Attack")
-                            playerAttack()
+                        if gameOver == false {
+                            engaged = true
+                            print(swiftUISpeech.outputText)
+                        
+                            if command.outputText.contains("Attack") || command.outputText.contains("attack") || command.outputText.contains("punch") || command.outputText.contains("Punch") || command.outputText.contains("hit") || command.outputText.contains("Hit") {
+                                print("Attack")
+                                playerAttack()
+                            }
+                            if command.outputText.contains("Heal") || command.outputText.contains("heal") || command.outputText.contains("cure") ||
+                                command.outputText.contains("Cure") ||
+                                command.outputText.contains("Potion") ||
+                                command.outputText.contains("potion") {
+                                print("Heal")
+                                playerHeal()
+                            }
                         }
-                        if command.outputText.contains("Heal") || command.outputText.contains("heal") || command.outputText.contains("cure") ||
-                            command.outputText.contains("Cure") ||
-                            command.outputText.contains("Potion") ||
-                            command.outputText.contains("potion") {
-                            print("Heal")
-                            playerHeal()
-                        }
+                        
                     })
                 
             }.frame(width: 300,height: 300)
@@ -91,13 +103,18 @@ struct ContentView: View {
     }
     // Player Actions
     func playerAttack() {
-        enemyHP -= Int.random(in: 100...150)
+        playSound(sound: "punch", type: "wav")
+        enemyHP -= Int.random(in: 200...350)
         if enemyHP <= 0 {
+            enemyHP = 0
             engaged = false
+            enemyDied = true
+            gameOver = true
             print("YOU WON")
         }
     }
     func playerHeal() {
+        playSound(sound: "heal", type: "wav")
         if playerHP < 130 {
             playerHP += Int.random(in: 40...50)
         }
@@ -109,9 +126,12 @@ struct ContentView: View {
     // Enemy Actions
     func enemyAttack() {
         print("Enemy attacks")
+        playSound(sound: "wind", type: "wav")
         playerHP -= Int.random(in: 10...20)
         if playerHP <= 0 {
             engaged = false
+            playerDied = true
+            gameOver = true
             print("GAME OVER")
         }
     }
