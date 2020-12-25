@@ -27,18 +27,6 @@ struct ContentView: View {
     var animation: Animation {
         Animation.easeOut
     }
-//    private let skView = SKView()
-
-    
-    // PARTICLE EMITTER START
-    
-    
-    
-    // PARTICLE EMITTER END
-        
-       
-        
-    
     
     let timer = Timer.publish(every: 8, on: .main, in: .common).autoconnect()
     
@@ -70,13 +58,14 @@ struct ContentView: View {
                             .animation(animation)
             VStack{
                 
-                // prints results to screen
+                // Prints speech results on screen
                 Text("\(swiftUISpeech.outputText)")
                     .onChange(of: swiftUISpeech.outputText, perform: { value in
                         if gameOver == false {
                             engaged = true
                             print(swiftUISpeech.outputText)
-                        
+                            
+                        // Compares speech results to following strings
                             if command.outputText.contains("Attack") || command.outputText.contains("attack") || command.outputText.contains("punch") || command.outputText.contains("Punch") || command.outputText.contains("hit") || command.outputText.contains("Hit") {
                                 print("Attack")
                                 playerAttack()
