@@ -13,7 +13,7 @@ struct PlayerWonView: View {
             .font(.title)
             .fontWeight(.bold)
             .onAppear(perform: {
-                playSound(sound: "12win1NL", type: "wav")
+                playSound(sound: "playerwon", type: "wav")
             })
     }
 }

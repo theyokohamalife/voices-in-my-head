@@ -1,9 +1,15 @@
 # Voices in My Head
 
-This is a voice-controlled game that was made during my time as a student at Code Chrysalis.
+This is a voice-controlled game that was made using SwiftUI and machine learning in Xcode 12. This game lets players battle a boss using nothing but their voice! Commands can be given to attack the opponent, or to heal the player.
 
-## How to install
-1. Fork, clone, and open the project file with XCode
+There are HP bars for the boss and the player. Whichever one tackles the other to 0 HP first wins!
+
+## How to install and play
+1. Fork and clone the repository.
+2. Open in Xcode and build using iOS 14 or higher.
+3. Press the mic button at the bottom and give one of the following voice commands:
+    * Offensive abilities: attack, punch, hit
+    * Defensive abilities: heal, cure, potion
 
 ## Technologies Used
 1. SwiftUI

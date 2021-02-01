@@ -13,7 +13,7 @@ struct PlayerLostView: View {
             .font(.title)
             .fontWeight(.bold)
             .onAppear(perform: {
-                playSound(sound: "13gameover1V1NL", type: "wav")
+                playSound(sound: "gameover", type: "wav")
             })
     }
 }
