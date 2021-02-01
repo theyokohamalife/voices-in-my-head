@@ -11,7 +11,6 @@
 		F737464B2590C7AA006D1ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F737464A2590C7AA006D1ECF /* Assets.xcassets */; };
 		F737464E2590C7AA006D1ECF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F737464D2590C7AA006D1ECF /* Preview Assets.xcassets */; };
 		F749E1E0259439E000A28D97 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F749E1DF259439E000A28D97 /* PlaySound.swift */; };
-		F74BB8A0259442A40059EEC2 /* battle.wav in Resources */ = {isa = PBXBuildFile; fileRef = F74BB89F259442A30059EEC2 /* battle.wav */; };
 		F769C3AD2594550A00BD4440 /* playerwon.wav in Resources */ = {isa = PBXBuildFile; fileRef = F769C3AC2594550900BD4440 /* playerwon.wav */; };
 		F769C3B12594556100BD4440 /* PlayerWonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769C3B02594556100BD4440 /* PlayerWonView.swift */; };
 		F769C3B5259455DB00BD4440 /* PlayerLostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769C3B4259455DB00BD4440 /* PlayerLostView.swift */; };
@@ -34,7 +33,6 @@
 		F737464D2590C7AA006D1ECF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F737464F2590C7AA006D1ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F749E1DF259439E000A28D97 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
-		F74BB89F259442A30059EEC2 /* battle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = battle.wav; sourceTree = "<group>"; };
 		F769C3AC2594550900BD4440 /* playerwon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = playerwon.wav; sourceTree = "<group>"; };
 		F769C3B02594556100BD4440 /* PlayerWonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWonView.swift; sourceTree = "<group>"; };
 		F769C3B4259455DB00BD4440 /* PlayerLostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLostView.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				F769C3BB2594617D00BD4440 /* heal.wav */,
 				F769C3BC2594617D00BD4440 /* punch.wav */,
 				F769C3B72594560B00BD4440 /* gameover.wav */,
-				F74BB89F259442A30059EEC2 /* battle.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -182,7 +179,6 @@
 				F737464B2590C7AA006D1ECF /* Assets.xcassets in Resources */,
 				F769C3B82594560B00BD4440 /* gameover.wav in Resources */,
 				F769C3BE2594617D00BD4440 /* punch.wav in Resources */,
-				F74BB8A0259442A40059EEC2 /* battle.wav in Resources */,
 				F7C47C5025959630008285A1 /* wind.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +332,7 @@
 				DEVELOPMENT_TEAM = J8RCW6524C;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Voices in My Head/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Toyo-Games.Voices-in-My-Head";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,7 +354,7 @@
 				DEVELOPMENT_TEAM = J8RCW6524C;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Voices in My Head/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,7 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Toyo-Games.Voices-in-My-Head";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
