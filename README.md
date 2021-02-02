@@ -4,6 +4,8 @@ This is a voice-controlled game that was made using SwiftUI and machine learning
 
 There are HP bars for the boss and the player. Whichever one tackles the other to 0 HP first wins!
 
+![main screen](./Resources/voices-screenshot.png)
+
 ## How to install and play
 1. Fork and clone the repository.
 2. Open in Xcode and build using iOS 14 or higher.
