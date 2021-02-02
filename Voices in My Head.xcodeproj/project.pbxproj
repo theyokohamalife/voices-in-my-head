@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AFEEA87B25C8CA760003E2B4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AFEEA87A25C8CA750003E2B4 /* README.md */; };
 		AFEEA87F25C8CDF60003E2B4 /* voices.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEEA87E25C8CDF60003E2B4 /* voices.png */; };
+		AFEEA88725C8D1460003E2B4 /* voices-small.png in Resources */ = {isa = PBXBuildFile; fileRef = AFEEA88625C8D1460003E2B4 /* voices-small.png */; };
 		F73746472590C7A7006D1ECF /* Voices_in_My_HeadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73746462590C7A7006D1ECF /* Voices_in_My_HeadApp.swift */; };
 		F737464B2590C7AA006D1ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F737464A2590C7AA006D1ECF /* Assets.xcassets */; };
 		F737464E2590C7AA006D1ECF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F737464D2590C7AA006D1ECF /* Preview Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		AFEEA87A25C8CA750003E2B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		AFEEA87E25C8CDF60003E2B4 /* voices.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voices.png; sourceTree = "<group>"; };
+		AFEEA88625C8D1460003E2B4 /* voices-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voices-small.png"; sourceTree = "<group>"; };
 		F73746432590C7A7006D1ECF /* Voices in My Head.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voices in My Head.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73746462590C7A7006D1ECF /* Voices_in_My_HeadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voices_in_My_HeadApp.swift; sourceTree = SOURCE_ROOT; };
 		F737464A2590C7AA006D1ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				AFEEA87E25C8CDF60003E2B4 /* voices.png */,
+				AFEEA88625C8D1460003E2B4 /* voices-small.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEEA88725C8D1460003E2B4 /* voices-small.png in Resources */,
 				F769C3BD2594617D00BD4440 /* heal.wav in Resources */,
 				F769C3AD2594550A00BD4440 /* playerwon.wav in Resources */,
 				AFEEA87F25C8CDF60003E2B4 /* voices.png in Resources */,
