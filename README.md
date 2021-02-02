@@ -14,8 +14,11 @@ There are HP bars for the boss and the player. Whichever one tackles the other t
     * Defensive abilities: heal, cure, potion
 
 ## Technologies Used
-1. SwiftUI
-2. SFSpeechRecognizer
+1. SwiftUI  
+https://developer.apple.com/xcode/swiftui
+
+2. SFSpeechRecognizer  
+https://developer.apple.com/documentation/speech/sfspeechrecognizer
 
 ## Sources Used
 https://github.com/zoblod/SwiftUI-Speech-to-Text
