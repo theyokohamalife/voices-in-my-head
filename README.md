@@ -4,7 +4,7 @@ This is a voice-controlled game that was made using SwiftUI and machine learning
 
 There are HP bars for the boss and the player. Whichever one tackles the other to 0 HP first wins!
 
-![main screen](Voices in My Head/Resources/voices.png)
+![main screen](https://github.com/theyokohamalife/voices-in-my-head/blob/main/Voices%20in%20My%20Head/Resources/voices.png)
 
 ## How to install and play
 1. Fork and clone the repository.
